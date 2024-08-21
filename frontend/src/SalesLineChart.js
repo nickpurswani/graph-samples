@@ -18,8 +18,7 @@ const SalesLineChart = ({ data }) => {
       <div
         style={{
             
-          height: 400,
-          padding:60
+          height: 400
         }}
       >
         <LineChart data={data} theme="Light" />

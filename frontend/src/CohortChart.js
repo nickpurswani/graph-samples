@@ -8,7 +8,7 @@ const CohortChart = ({ data }) => {
   const values = yLabels.map(year => data[year]);
 
   return (
-    <div style={{ padding:60, height:400 }}>
+    <div style={{  height:400 }}>
         <h1>Cohort Analysis </h1>
       <HeatMapGrid
         xLabels={xLabels}

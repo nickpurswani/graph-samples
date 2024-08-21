@@ -17,8 +17,7 @@ const SalesStackedAreaChart = ({ data }) => {
       <div
         style={{
             
-          height: 400,
-          padding:60
+          height: 400
         }}
       >
         <StackedAreaChart data={data} theme="Light"  />
