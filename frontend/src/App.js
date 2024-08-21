@@ -17,11 +17,11 @@ const App = () => {
     const fetchData = async () => {
       try {
         const [salesResponse, growthResponse, customerResponse, geoDataResponse, cohortDataResponse] = await Promise.all([
-          fetch(`http://localhost:5000/api/analytics/sales-over-time?interval=${interval}`),
-          fetch(`http://localhost:5000/api/analytics/sales-growth-rate`),
-          fetch(`http://localhost:5000/api/analytics/customer-data?interval=${interval}`),
-          fetch(`http://localhost:5000/api/analytics/geographical-distribution`),
-          fetch(`http://localhost:5000/api/analytics/customer-lifetime-value`)
+          fetch(`https://graph-samples.onrender.com/api/analytics/sales-over-time?interval=${interval}`),
+          fetch(`https://graph-samples.onrender.com/api/analytics/sales-growth-rate`),
+          fetch(`https://graph-samples.onrender.com/api/analytics/customer-data?interval=${interval}`),
+          fetch(`https://graph-samples.onrender.com/api/analytics/geographical-distribution`),
+          fetch(`https://graph-samples.onrender.com/api/analytics/customer-lifetime-value`)
         ]);
 
         const salesData = await salesResponse.json();
