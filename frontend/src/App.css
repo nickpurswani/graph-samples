@@ -1,0 +1,11 @@
+.App {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.Card {
+  height: 150px;
+  width: 300px;
+  border: 1px solid black;
+}
